@@ -3,22 +3,22 @@ import time
 import os
 
 #Read check values
-file1 = open("rules/age.txt", "r")
-age_check = int(file1.read())
-file1.close()
+file_age = open("rules/age.txt", "r")
+age_check = int(file_age.read())
+file_age.close()
 
 file2 = open("rules/height.txt", "r")
 height_check = int(file2.read())
 file2.close()
 
-running = True
+running = True 
 while running:
 
     #Get inputs
     os.system('cls')
     print("Rollercoaster-check™")
-    int age = input("Voer leeftijd in:")
-    int height = input("Voer lengte in:")
+    int(age = input("Voer leeftijd in: ")
+    int(height = input("Voer lengte in: ");
    
 
     #Process checks
@@ -35,5 +35,5 @@ while running:
         time.sleep(3)
 
     result = input("Druk op Enter om nog een keer te checken, of X om te stoppen\n\n")
-    if(result.upper() == "X"):
+    if(result.upper() == "Q"):
         running = False
